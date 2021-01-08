@@ -13,7 +13,7 @@ public class AdminLoginTests extends BaseTests {
     @Test
     public void successfulLogin(){
         AdminLogin.goTo();
-        AdminLogin.logIn("admin", "parola123!");
+        AdminLogin.logIn("putUsernameHere", "putPasswordHere");
         AdminDashboard.verifyLogOutButton("Logout", "Logout title not as expected to be");
     }
 
